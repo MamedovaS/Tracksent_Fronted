@@ -1,0 +1,15 @@
+#root {
+    width: auto;
+    background: rgb(149, 181, 95);
+    text-align: center;
+}
+
+body {
+          background-color: #b8d2ab;
+          text-align: center;
+}
+
+.map_body {
+    padding: 50px;
+}
+

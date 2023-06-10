@@ -1,0 +1,15 @@
+
+.MapButton {
+    
+    width: 200px;
+    height: 250px;
+}
+.MyButton{
+    width: 350px;
+    height: 50px;
+}
+#editableText{
+    width: 550px;
+    height: 125px;
+    text-align: left;
+}

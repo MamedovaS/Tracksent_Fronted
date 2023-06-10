@@ -1,5 +1,7 @@
 import React from 'react'
 
+import MapButton from './MapButton';
+
 import IntroSection from './components/intro/Intro'
 import ContactSection from './components/contact-section/ContactSection'
 import MapSection from './components/map/Map' // import the map here
@@ -14,14 +16,24 @@ const location = {
   lng: -122.08427,
 } // our location object from earlier
 
-const App = () => (
+/*const App = () => (
+  
   <div className="App">
     <IntroSection />
     <ContactSection />
-    <MapSection location={location} zoomLevel={17} /> {/* include it here */}
+    <MapSection location={location} zoomLevel={17} /> {/* include it here }
     <DisclaimerSection />
     <FooterSection />
   </div>
-)
+)*/
+
+function App() {
+  return (
+    <div>
+      <h1>Welcome to My App</h1>
+      <MapButton />
+    </div>
+  );
+}
 
 export default App

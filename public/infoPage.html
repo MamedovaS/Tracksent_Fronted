@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Open Map on Button Click</title>
+  <base href="/">
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="src\css\mapButton.css" />
+  <link rel="stylesheet" type="text/css" href="src\css\main.css" />
+
+  
+</head>
+<body>
+    
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root" > <h2>Info of field </h2></div>
+    <textarea id="editableText"></textarea>
+    <textarea id="editableText"></textarea>
+    <textarea id="editableText"></textarea>
+
+  <br>
+  <button onclick="saveChanges()">Save</button>
+   
+    <style>
+        body {
+          background-color: #b8d2ab;
+                   
+        }
+      </style>
+    
+    <script>
+        function openMap() {
+          window.open("public/map.html");
+        }
+
+        var savedText = localStorage.getItem("editableText");
+    var textarea = document.getElementById("editableText");
+
+    if (savedText) {
+      textarea.value = savedText;
+    }
+    function saveChanges() {
+      var currentText = textarea.value;
+      localStorage.setItem("editableText", currentText);
+      alert("Changes saved!");
+    }
+      </script>  
+      
+    <button class ="MyButton" onclick="openMap()">Open Map</button>
+        
+</body>
+</html>
