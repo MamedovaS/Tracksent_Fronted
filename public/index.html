@@ -6,25 +6,42 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="src\css\main.css" />
     <link rel="stylesheet" type="text/css" href="src\css\mapButton.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="src\js\main.js"></script>
 
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <title>trecksent</title>
-    <style>
-        header {
-          background-color: #333;
-          color: #fff;
-          padding: 20px;
-          text-align: center;
-        }
-      </style>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root" >   <h2>list of fields</h2></div>
- 
-    <button class ="MapButton" onclick="openMap()">Open info</button>
-    <button class ="MapButton" onclick="openMap()">Open info</button>
-    <button class ="MapButton" onclick="openMap()">Open info</button>
+    <header>
+      <div id="header-menu"/></div>
+    </header>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript> 
+    <div id="content_div">
+      <div>
+        <h2 id="title" class="content_title">поле 1</h2> 
+        <a class="pdf_image" href ="public\infoPage.html" >
+          <img src="src\content\flower_field.jpg">
+        </a> 
+      </div>
+      <div>
+        <h2 id="title" class="content_title">no field</h2> 
+        <a class="pdf_image" href ="" >
+          <!--<img src="content/гречка-поле.jpg"/>-->
+        </a> 
+      </div>
+    </div>
+    <script>
+      var buttons=document.getElementsByClassName("MapButton");
+      for(var b=0;b<buttons.length;b++)
+      {
+        if(buttons[b].id=="ok")
+        {
+          buttons[b].style.background="url('js/flower_field-поле.jpg')";   
+        }
+      }
+    </script>
 
     <script>
         function openMap() {

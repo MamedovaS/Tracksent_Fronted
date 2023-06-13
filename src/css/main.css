@@ -1,15 +1,59 @@
 #root {
     width: auto;
-    background: rgb(149, 181, 95);
+    background: rgb(112, 128, 85);
     text-align: center;
 }
 
 body {
-          background-color: #b8d2ab;
-          text-align: center;
+    background-color: #F3EFE0;
+    text-align: center;      
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;        
 }
+header {
+    background-color: #434242;
+    color: #F3EFE0;
+    padding: 0px;
+    text-align: center;
+    height: 125px;
+    
+  }
+
+#header-menu {
+    display: inline-flex;
+    padding-left: 15%;
+    padding-right: 12%;
+    width: -webkit-fill-available;}
 
 .map_body {
-    padding: 50px;
+    padding: 20px;
 }
+
+.tile-menu{
+    right: 0%;
+    padding-right: 20%;
+    padding-top: 2%;;
+    position: absolute;
+}
+
+.tile-menu a:hover {
+    color: #22A39F;
+   }
+   .tile-menu>li>a {
+     font-size: 1.25rem;
+       line-height: 2.5rem;
+       font-family: arial,'Oswaldregular',helvetica,sans-serif,;
+       position: relative;
+       display: inline-block;
+       padding: 0 14px;
+       text-transform: uppercase;
+       color: white;
+       text-decoration-line: blink;
+   }
+   
+   .tile-menu li {
+     display: inline-block;
+   }
 
